@@ -6,7 +6,7 @@
 
 ### 2、安装C语言的编译环境
 
-![image-20210711202228579](C:\Users\fat man\Desktop\笔记\Redis\imgs\image-20210711202228579.png)
+![image-20210711202228579](imgs/image-20210711202228579.png)
 
 ### 3、把包放入Linux系统里面
 
@@ -408,7 +408,7 @@ Redis客户端可以订阅任意数量的频道。
 
 1、客户端可以订阅频道如下图
 
-![image-20210718110147613](C:\Users\fat man\Desktop\笔记\Redis\imgs\image-20210718110147613.png)
+![image-20210718110147613](imgs/image-20210718110147613.png)
 
 ### 3.3 发布订阅命令行实现
 

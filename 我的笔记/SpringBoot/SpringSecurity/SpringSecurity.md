@@ -11,7 +11,7 @@
 
 ## 2、简介
 
-![image-20210623132657845](C:\Users\fat man\Desktop\笔记\SpringBoot\SpringSecurity\imgs\image-20210623132657845.png)
+![image-20210623132657845](imgs/image-20210623132657845.png)
 
 ```xml
 <dependency>
@@ -50,7 +50,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 当访问http://localhost:8080/level1/1时，会返回一个拒绝访问页面，Access Denied
 
-![image-20210624211836836](C:\Users\fat man\Desktop\笔记\SpringBoot\SpringSecurity\imgs\image-20210624211836836.png)
+![image-20210624211836836](imgs/image-20210624211836836.png)
 
 
 

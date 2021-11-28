@@ -4,13 +4,13 @@
 
 ​	1.创建一个maven工程，里面再创建一个web工程用来做spirng的测试。
 
-<img src="C:\Users\fat man\Desktop\笔记\Spring\img\image-20210522131658652.png" alt="image-20210522131826173" style="zoom:67%;" />
+![image-20210522131658652](img/image-20210522131658652.png)
 
 
 
 ​	2.创建包和文件夹java、resource
 
-<img src="C:\Users\fat man\Desktop\笔记\Spring\img\image-20210522132020617.png" alt="image-20210522132020617" style="zoom: 80%;" />
+![image-20210522132020617](img/image-20210522132020617.png)
 
 3.在Pom文件导入spirng坐标
 
@@ -226,7 +226,7 @@ public class Book {
 
    运行结果为：
 
-   ![image-20210522163413685](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210522163413685.png)
+   ![image-20210522163413685](img/image-20210522163413685.png)
 
    
 
@@ -281,7 +281,7 @@ public class Book {
 </bean>
 ```
 
-![image-20210522165941103](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210522165941103.png)
+![image-20210522165941103](img/image-20210522165941103.png)
 
 - 属性值包含特殊符号
 
@@ -296,7 +296,7 @@ public class Book {
         </bean>
 ```
 
-<img src="C:\Users\fat man\Desktop\笔记\Spring\img\image-20210522170349026.png" alt="image-20210522170349026" style="zoom: 80%;" />
+![image-20210522170349026](img/image-20210522170349026.png)
 
 **2.注入外部bean**
 
@@ -1080,7 +1080,7 @@ public void testService1(){
 
 （3）使用登录例子说明AOP
 
-![image-20210524114629837](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210524114629837.png)
+![image-20210524114629837](img/image-20210524114629837.png)
 
 ### 2、底层原理
 
@@ -1092,13 +1092,13 @@ public void testService1(){
 
    创建接口实现类代理对象，增强类的方法
 
-![image-20210524115313814](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210524115313814.png)
+![image-20210524115313814](img/image-20210524115313814.png)
 
 （2）没有接口情况，使用CGLIB动态代理
 
 创建子类的代理对象，增强类的方法
 
-![image-20210524115606652](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210524115606652.png)
+![image-20210524115606652](img/image-20210524115606652.png)
 
 ### 3、JDK动态代理
 
@@ -1649,7 +1649,7 @@ public void testDelete(){
 
 （2）使用JdbcTemplate实现查询返回某个值代码
 
-![image-20210525214749604](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210525214749604.png)
+![image-20210525214749604](img/image-20210525214749604.png)
 
 - ​	第一个参数：sql语句
 - 第二个参数：返回类型Class
@@ -1669,7 +1669,7 @@ public int queryCount() {
 
 （2）JdbcTemplate实现查询返回对象
 
-​	![image-20210525215740747](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210525215740747.png)
+​	![image-20210525215740747](img/image-20210525215740747.png)
 
 - 第一个参数：sql语句
 - 第二个参数：RowMapper是接口，针对返回不同类型数据，使用这个接口实现类去完成数据封装
@@ -1692,7 +1692,7 @@ public User queryForOne(int id) {
 
 > ​		参数意思与返回对象一样
 
-![image-20210525221048458](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210525221048458.png)
+![image-20210525221048458](img/image-20210525221048458.png)
 
 
 
@@ -1732,7 +1732,7 @@ public User queryForOne(int id) {
 
 1、创建数据库表，添加记录
 
-![image-20210526115700750](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210526115700750.png)
+![image-20210526115700750](img/image-20210526115700750.png)
 
 2、创建service,搭建dao，完成对象创建和注入关系
 
@@ -1807,7 +1807,7 @@ public class AccountService {
 
 5、上面代码，如果正常执行没有问题，但是如果代码执行过程中出现异常，有问题
 
-![image-20210526144506238](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210526144506238.png)
+![image-20210526144506238](img/image-20210526144506238.png)
 
 > ​	这时候数据库Lucy就会少一百元，但是Mary不会增加一百元，这一百元凭空消失了。
 
@@ -1829,7 +1829,7 @@ public class AccountService {
 
   - 提供一个接口，代表事务管理器，这个接口针对不同的框架提供不同的实现类
 
-    ![image-20210526145816840](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210526145816840.png)
+    ![image-20210526145816840](img/image-20210526145816840.png)
 
 1.在spring配置文件配置事务管理器
 
@@ -1900,7 +1900,7 @@ public @interface Transactional {
 
 > Spring框架事务传播行为有7种
 
-![image-20210526153034313](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210526153034313.png)
+![image-20210526153034313](img/image-20210526153034313.png)
 
 2、isolation:事务隔离级别
 
@@ -1914,7 +1914,7 @@ public @interface Transactional {
 
 （3）设置隔离级别解决问题
 
-![image-20210526154235431](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210526154235431.png)
+![image-20210526154235431](img/image-20210526154235431.png)
 
 3、timeout：超时时间
 
@@ -2014,7 +2014,7 @@ public class JTest4 {
 
 （2）整合Junit5
 
-![image-20210526165023362](C:\Users\fat man\Desktop\笔记\Spring\img\image-20210526165023362.png)
+![image-20210526165023362](img/image-20210526165023362.png)
 
 > 在注解上引入Junti5包
 

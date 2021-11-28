@@ -663,7 +663,7 @@ public class ResourceProperties {
 
 #### 请求映射原理：
 
-![20210205005703527](C:\Users\fat man\Desktop\笔记\Spring\img\20210205005703527.png)
+![20210205005703527](imgs/20210205005703527.png)
 
 SpringMVC功能分析都从 `org.springframework.web.servlet.DispatcherServlet` -> `doDispatch()`开始
 
@@ -783,7 +783,7 @@ public class AdminWebConfig implements WebMvcConfigurer {
 
 
 
-![image-20210616193900984](C:\Users\fat man\Desktop\笔记\SpringBoot\imgs\image-20210616193900984.png)
+![image-20210616193900984](imgs/image-20210616193900984.png)
 
 
 
@@ -870,7 +870,7 @@ html:
     </dependency>
 ```
 
-![image-20210617133536930](C:\Users\fat man\Desktop\笔记\SpringBoot\imgs\image-20210617133536930.png)
+![image-20210617133536930](imgs/image-20210617133536930.png)
 
 疑问：为什么官方没有导入数据库驱动？
 
@@ -965,7 +965,7 @@ class DemoApplicationTests {
 </dependency>
 ```
 
-![image-20210617230138049](C:\Users\fat man\Desktop\笔记\SpringBoot\imgs\image-20210617230138049.png)
+![image-20210617230138049](imgs/image-20210617230138049.png)
 
 #### （1）xml配置模式
 
@@ -1088,7 +1088,7 @@ public interface UserMapper {
 </dependency>
 ```
 
-![image-20210618111337603](C:\Users\fat man\Desktop\笔记\SpringBoot\imgs\image-20210618111337603.png)
+![image-20210618111337603](imgs/image-20210618111337603.png)
 
 > 这个注解导入的包包括了jdbc何Mybatis核心包
 
@@ -1300,7 +1300,7 @@ public String deleteUser(@PathVariable("id") Integer id,
 
 - starter-pom引入autoconfiguer包
 
-![image-20211121170824600](C:\Users\fat man\Desktop\笔记\SpringBoot\imgs\image-20211121170824600.png)
+![image-20211121170824600](imgs/image-20211121170824600.png)
 
 - autoconfigure包中配置使用`META-INF/spring.factories`中`EnableAutoConfiguration`的值，使得项目启动加载指定的自动配置类
 

@@ -182,7 +182,7 @@ jsp页面
 
 ### 4、RestFul风格
 
-![image-20210527143602341](C:\Users\fat man\Desktop\笔记\SpringMVC\image-20210527143602341.png)
+![image-20210527143602341](imgs/image-20210527143602341.png)
 
 配置web.xml
 
@@ -296,7 +296,7 @@ public String testRequestHeader(@RequestHeader(value = "Accept-Language") String
 
 
 
-![image-20210527150127354](C:\Users\fat man\Desktop\笔记\SpringMVC\imgs\image-20210527150127354.png)
+![image-20210527150127354](imgs/image-20210527150127354.png)
 
 > value属性名可以写Request Headers里的属性
 
@@ -356,7 +356,7 @@ public String testPojo(User user){
 
 ### 2、Servlet原生api
 
-![image-20210527153524950](C:\Users\fat man\Desktop\笔记\SpringMVC\imgs\image-20210527153524950.png)
+![image-20210527153524950](imgs/image-20210527153524950.png)
 
 ## 4.处理模型数据
 
